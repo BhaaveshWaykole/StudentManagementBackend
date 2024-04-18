@@ -22,6 +22,10 @@ const facultySchema = new mongoose.Schema({
     },
     photo: {
         type: String
+    },
+    userType : {
+        type: String,
+        required : true
     }
 })
 

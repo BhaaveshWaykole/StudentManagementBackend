@@ -43,9 +43,10 @@ export const postStudent = async (req, res) => {
         // console.log("before")
         const newStudent = new Student({
             prn: req.body.prn,
-            username: req.body.username,
+            username: req.body.name,
             email: req.body.email,
-            password: hashedPassword
+            password: hashedPassword,
+            userType: req.body.userType
         });
         // console.log("after")
         // Save User
